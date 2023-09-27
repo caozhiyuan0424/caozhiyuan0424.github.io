@@ -4,6 +4,36 @@
    <title>YOUR NAME Portfolio</title>
    <link rel="stylesheet" href="css/style.css">
  </head>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Stroke Prediction & Analysis</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/dataset">Dataset</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis_stat">Summary Statistics</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis_uni">Univariate Analysis</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis_biv">Bivariate Analysis</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis_corr">Feature Correlation</a>
+        </div>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/prediction">Prediction</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+ 
  <body>
    <nav>
      <ul>
