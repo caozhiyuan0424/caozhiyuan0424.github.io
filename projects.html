@@ -4,8 +4,8 @@ title: Projects
 ---
 
 <div class="container" style="margin-top:80px; margin-bottom:80px;">
-  <h2>Ongoing Project</h2>
-  Here are the projects I'm currently working on. Some of the results may not be shown here.
+  <h2>Ongoing Projects</h2>
+  <p>Here are the projects I'm currently working on. Some of the results may not be shown here.</p>
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
@@ -23,8 +23,13 @@ title: Projects
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="scdeconv" class="container tab-pane active"><br>
-      <h3>Improve the performance of deconvolution using marker gene selection</h3>
+      <h3>Improve the performance of single cell transcriptomics deconvolution using marker gene selection</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Basically, I</p>
+      <ul>
+        <li>Write a pipeline with enables a better performance of deconvolution with proper number of marker genes. It support two different modes: pseudobulk mode which only takes a scRNA data as input and realbulk mode which takes scRNAdata, real bulk data and its ground truth as input. Pseudobulk mode is easier to use whereas realbulk mode will typically gives us a better result.</li>
+        <li>Benchmark the performance of deconvolution on bulk-RNA Seq under various conditions, including different deconvolution algorithms, marker selection strategies and pseudo-bulk generation methods. Based on the results, MuSiC is chosen to be the model to use in deconvolution pipeline because its performance and interoperability.</li>
+      </ul>
     </div>
     <div id="neuron" class="container tab-pane fade"><br>
       <h3>Multi-gridding NEURON reaction-diffusion model development</h3>
