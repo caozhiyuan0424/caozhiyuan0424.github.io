@@ -48,6 +48,21 @@ title: Projects
           <img src="assets/images/neuron_p1.png" alt="Demo_fig2" style="max-width: 100%;">
         </div>
       </div>
+      <div>
+        <p>
+          A variety of dedicated tools have been developed to simulate brain activities. The NEURON simulator is one of the most popular tools, which supports simulating the chemical dynamics and neuron networks simultaneously. In NEURON, reaction-diffusion module (rxd) help simulate the movement within molecules with respect to their concentrations, which is vital in simulating the neural environments and their dynamics on numerical scales.
+        </p>
+        <p>
+          Traditionally, the diffusion is realized by constructing a uniform mesh grids of a fixed distance dx. The diffusion activity is then evaluated by each time step dt. However, in real implementation, some spaces in the neuron cells, such as dendrites and soma, contain a high density of molecules whereas some spaces are sparse. Using a mesh with a fixed dx causes a loss of computation resources. Hence, we want to dynamically allocate different dx for different parts in neuron cells. To realize this, we have to implement multi-gridding reaction diffusion model. 
+        </p>
+        In this project, I basically have done the following works:
+        <ul>
+          <li>Working on adding multi-gridding diffusion features for NEURON simulator in python.</li>
+          <li>Derived the mathematical equations for multi-gridding reaction-diffusion model.</li>
+          <li>Implemented the weakly-connected implicit-Euler diffusion model of neuron simulation with a 1% error</li>
+          <li>Utilized machine learning algorithms, including XGBoost, random forest, neural network to predict the spike delay of a specific neuron given its previous spike, estim and istim.</li>
+        </ul>
+      </div>
     </div>
     <div id="samah" class="container tab-pane fade"><br>
       <h3>Sentimental analysis and trend analysis of marijuana projects</h3>
